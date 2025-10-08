@@ -11,5 +11,12 @@
   "packageManager": "pnpm@10.18.1",
   "engines": {
     "node": ">=22 < 23"
+  },
+  "devDependencies": {
+    "@tsconfig/node-ts": "^23.6.1",
+    "@tsconfig/node22": "^22.0.2",
+    "@tsconfig/strictest": "^2.0.6",
+    "@types/node": "^24.7.0",
+    "typescript": "^5.9.3"
   }
 }
