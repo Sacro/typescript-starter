@@ -17,6 +17,14 @@ export default defineConfig(
       },
     },
     rules: {
+      '@typescript-eslint/no-floating-promises': [
+        'error',
+        {
+          allowForKnownSafeCalls: [
+            { from: 'package', name: ['suite', 'test'], package: 'node:test' },
+          ],
+        },
+      ],
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
