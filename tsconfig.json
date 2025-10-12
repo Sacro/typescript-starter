@@ -6,5 +6,8 @@
   ],
   "compilerOptions": {
     "noEmit": true
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
