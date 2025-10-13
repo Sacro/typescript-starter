@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "test": "node --test"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
