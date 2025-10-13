@@ -2,6 +2,7 @@ import { defineConfig } from 'eslint/config'
 import eslint from '@eslint/js'
 import stylistic from '@stylistic/eslint-plugin'
 import typescript from 'typescript-eslint'
+import vitest from '@vitest/eslint-plugin'
 
 export default defineConfig(
   stylistic.configs.recommended,
@@ -43,5 +44,10 @@ export default defineConfig(
   {
     files: ['**/*.(c|m)?js'],
     extends: [typescript.configs.disableTypeChecked],
+  },
+
+  // @ts-expect-error vitest isn't quite typescript compliant
+  {
+    ...vitest.configs.all,
   },
 )
